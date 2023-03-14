@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
+
+        .rearrange1{
+            background-color: gray;
+            border: 0;
+            align-content: center;
+        }
+
+        .rearrange2{
+            background-color: rgb(173, 171, 171);
+            border: 0;
+            align-content: center;
+        }
+
+        .rearrange3{
+            background-color: rgb(202, 197, 197);
+            border: 0;
+            align-content: center;
+        }
+
+        .rearrange4{
+            background-color: rgb(236, 236, 236);
+            border: 0;
+            align-content: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Responsive Four Column Layout with Flex</h2>
+    <p>Resize the browser window to see the effect. On screems that are 992px wide or less,
+        the columns will resize from four columns to two columns. On screens that are 600px wide or
+        less, the columns will stack on top of each other instead of next to eachother.
+    </p>
+    <div class="grid-container">
+        <div class="rearrange1">
+            <h2>Column 1</h2>
+            some text.
+        </div>
+        <div class="rearrange2">
+            <h2>Column 2</h2>
+            some text.
+        </div>
+        <div class="rearrange3">
+            <h2>Column 3</h2>
+            some text.
+        </div>
+        <div class="rearrange4">
+            <h2>Column 4</h2>
+            some text.
+        </div>
+    </div>
+
+</body>
+
+</html>

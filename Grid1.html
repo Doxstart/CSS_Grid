@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            #leftsidebar{
+                float: none;
+                width: auto;
+            }
+
+            #main{
+                margin-left: 4px;
+            }
+
+            #menulist{
+                margin: 0; padding: 0;
+            }
+
+            .menuitem{
+                background: #cdf0f6;
+                border: 1px solid #d4d4d4;
+                margin: 4px;
+                padding: 2px;
+            }
+
+            @media screen and (min-width: 500px){
+                #leftsidebar {width: 200px; float:left;}
+                #main {margin-left: 216px;}
+            }
+
+        </style>
+    </head>
+    <body>
+        
+    <div class="wrapper">
+        <div id="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1>Resize the browser window to see the effect!</h1>
+            <p>My text My text My text My text My text My text My text</p>
+        </div>
+    </div>
+
+    </body>
