@@ -8,7 +8,27 @@
         .grid-container{
             display: grid;
             grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-template-areas: 
+                "a b"
+                "c d";
             
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 992px){
+            .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            }
+        }
+
+        @media screen and (max-width: 600px){
+            .grid-container{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            }
         }
 
         .rearrange1{
@@ -41,7 +61,7 @@
 <body>
 
     <h2>Responsive Four Column Layout with Flex</h2>
-    <p>Resize the browser window to see the effect. On screems that are 992px wide or less,
+    <p>Resize the browser window to see the effect. On screens that are 992px wide or less,
         the columns will resize from four columns to two columns. On screens that are 600px wide or
         less, the columns will stack on top of each other instead of next to eachother.
     </p>
